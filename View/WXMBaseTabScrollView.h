@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WXMBaseTabHeaderView : UIView
 @property (nonatomic, weak) UIScrollView *scrollView;
-@property (nonatomic, strong) NSMutableArray<UIView *> *hitTestViews;
 @end
 
 @interface WXMBaseTabScrollView : UIScrollView

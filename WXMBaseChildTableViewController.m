@@ -32,16 +32,15 @@
 #pragma clang diagnostic pop
 
 - (void)requestDataSources {
-    NSLog(@"xxxxxxxxxxxxxxxxx  %@", self);
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return random() % 2 == 0 ? 20 : 0;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)table cellForRowAtIndexPath:(NSIndexPath *)index {
     UITableViewCell *cell = [table dequeueReusableCellWithIdentifier:@"cell" forIndexPath:index];
-    /** cell.contentView.backgroundColor = KRandomColor; */
     return cell;
 }
 

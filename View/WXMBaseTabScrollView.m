@@ -12,7 +12,8 @@
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *hitTestView = [super hitTest:point withEvent:event];
-    if ([self.hitTestViews containsObject:hitTestView]) {
+    if ([hitTestView isKindOfClass:[UIButton class]] &&
+        hitTestView.superview == self) {
         return hitTestView;
     }
     if (hitTestView) return self.scrollView;
