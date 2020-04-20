@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIScrollView *)slidScrollView;
 - (void)setSlidScrollView;
 - (void)setSlidScrollContentOffsetY:(CGFloat)offsetY;
+
 @end
 
 NS_ASSUME_NONNULL_END

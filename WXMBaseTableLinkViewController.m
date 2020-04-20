@@ -37,6 +37,8 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self.view addSubview:self.contentView];
     [self.view addSubview:self.loading];
     [self.view addSubview:self.tableHeader];

@@ -52,7 +52,7 @@
     return YES;
 }
 
-- (BOOL)touchesShouldBegin:(NSSet<UITouch *> *)touches  withEvent:(nullable UIEvent *)event inContentView:(UIView *)view {
+- (BOOL)touchesShouldBegin:(NSSet<UITouch *> *)touches  withEvent:(UIEvent *)event inContentView:(UIView *)view {
     CGPoint point = [[touches anyObject] locationInView:view];
     self.currentPoint = point;
     return YES;
